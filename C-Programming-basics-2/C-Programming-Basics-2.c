@@ -6,7 +6,7 @@ int main() {
 
 	printf("\n%d", num1);
 
-	float num2 = 1.40129846432481707092372958328991613128026194187651577175706828388979108268586060148663818836212158203125e-45;
+	float num2 = -1.40129846432481707092372958328991613128026194187651577175706828388979108268586060148663818836212158203125e-45;
 
 	printf("\n%0.149f", num2);
 
@@ -52,7 +52,65 @@ int main() {
 
 	printf("\n%Lf", num12);
 
+	// Sizeof operator returns the size of a variable 
 
+
+	printf("\n size of long double= %lu bytes", sizeof(num4));
+	printf("\n size of long double= %lu bytes", sizeof(num11));
+	printf("\n size of long double= %lu bytes", sizeof(num12));
+
+
+	// C Input using the scanf() function 
+	//int testInteger; 
+	//float testFloat;
+	//double testDouble;
+
+
+	//printf("\nEnter an integer: ");
+	//scanf_s("%d", &testInteger);
+	//printf("\nEnter a float: ");
+	//scanf_s("%f", &testFloat);
+	//printf("\nEnter a double: ");
+	//scanf_s("%lf", &testDouble);
+	//printf("\nInteger = %d", testInteger);
+	//printf("\nFloat = %0.2f", testFloat);
+	//printf("\nDouble = %0.2lf", testDouble);
+
+	//char testChar;
+	
+	//printf("\nEnter a character: ");
+	//scanf_s("%c", &testChar, 1);
+	//printf("\nCharacter = %c", testChar);
+	//printf("\nCharacter ASCII value = %d", testChar);
+
+	// Input Output Multiple Values
+	//int a;
+	//float b;
+
+	//printf("\nEnter a integer and then a float: ");
+
+	//scanf_s("%d%f", &a, &b);
+
+	//printf("You entered the Integer = %d and the Float = %f", a, b);
+
+
+	// C Arithmetic Operators
+	int a = 10, b = 123, c;
+
+	c = a+b;
+	printf("\nA + B = %d", c);
+
+	c = b-a;
+	printf("\nB - A = %d", c);
+
+	c = a*b;
+	printf("\nA * B = %d", c);
+
+	c = b/a;
+	printf("\nB / A = %d", c);
+
+	c = b%a; 
+	printf("\nB modulus A = %d", c); 
 
 	return 0;
 }
